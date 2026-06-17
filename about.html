@@ -4,6 +4,171 @@
     <title>Ananda - Official Website</title>
     <link rel="icon" href="assets/11476437062350058200-removebg-preview.png" type="image/x-Icon">
     <style>
+        body{
+    margin:0;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.8;
+}
+
+/* Header */
+
+
+table:first-of-type h1{
+    font-size:42px;
+    margin:10px 0;
+}
+
+table:first-of-type p{
+    font-size:18px;
+}
+
+/* Navigation */
+table:nth-of-type(2){
+    border-collapse:collapse;
+    background:#002147 !important;
+}
+
+table:nth-of-type(2) td{
+    border:none;
+    transition:0.3s;
+}
+
+table:nth-of-type(2) td:hover{
+    background:#0056b3;
+}
+
+table:nth-of-type(2) a{
+    text-decoration:none;
+    font-size:17px;
+    font-weight:bold;
+}
+
+/* Main heading */
+section h1{
+    text-align:center;
+    color:#002147;
+    margin-top:30px;
+    font-size:40px;
+}
+
+/* Content Cards */
+.over,
+#mission,
+#pricipal,
+.history,
+.old,
+.unit{
+    width:85%;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.12);
+}
+
+/* Titles */
+h2,h3{
+    color:#003d7a;
+}
+
+/* Images */
+.over img,
+#mission img{
+    display:block;
+    margin:20px auto;
+    max-width:100%;
+    height:auto;
+}
+
+.history img,
+#pricipal img{
+    display:block;
+    margin:20px auto;
+    max-width:100%;
+    border-radius:10px;
+}
+
+/* Mission section */
+#mission{
+    text-align:right;
+}
+
+/* Counselling section */
+.unit table{
+    background:transparent;
+}
+
+/* Hover effect */
+.over:hover,
+#mission:hover,
+#pricipal:hover,
+.history:hover,
+.old:hover,
+.unit:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+/* Horizontal lines */
+hr{
+    border:none;
+    height:2px;
+    background:#d9d9d9;
+    width:90%;
+    margin:20px auto;
+}
+
+/* Footer */
+#footer{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+#footer img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    margin:10px;
+    border:3px solid white;
+}
+
+small{
+    display:block;
+    background:#00152e;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    table:nth-of-type(2) td{
+        display:block;
+        width:100%;
+    }
+
+    table:first-of-type h1{
+        font-size:28px;
+    }
+
+    .over,
+    #mission,
+    #pricipal,
+    .history,
+    .old,
+    .unit{
+        width:95%;
+    }
+
+    #mission{
+        text-align:left;
+    }
+}
         
     </style>
 
@@ -41,7 +206,7 @@
         <hr>
         <!--vision-->
 
-        <div id="over">
+        <div class="over">
             <h2>Our Vision</h2>
             <p>Contributing to the nation by nurturing a disciplined and respectful group of students who are
                 well-educated, virtuous, and skilled, within a Buddhist environment.</p>
@@ -69,7 +234,7 @@
             <img src="##" alt="pricipal image">
         </div>
         <hr>
-        <div id="history">
+        <div class="history">
             <img src="##" alt="history image">
             <h3>Our Proud History</h3>
             <p>In the late 19th century, under the guidance of Hikkaduwe Sri Sumangala Thera, a new chapter began for
@@ -88,7 +253,7 @@
 
         </div>
         <hr>
-        <div id="old">
+        <div class="old">
             <h3>Ananda College Old Girls Association</h3>
             <p>The Ananda College Old Girls Association (ACOGA) was established in 1908, under the leadership of then
                 Principal of Ananda College Don Baron Yasithma Perera. The first Secretary of the Association was C.M.
@@ -100,7 +265,7 @@
                 meet and also arranging the annual dinner was another objective.</p>
         </div>
         <hr>
-        <div id="unit">
+        <div class="unit">
             <h3>Counselling Unit of Ananda College</h3>
             <table border="0" width="100%" bgcolor="#f2f2f2" cellpadding="15">
                 <tr>
